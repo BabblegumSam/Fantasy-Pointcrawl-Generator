@@ -25,12 +25,12 @@ let locArr = [];
 let valleyArr, plainsArr, hillArr, mountArr, cityArr, strangeArr, desArr, featArr;
 
 function preload() {
-  paperTexture = loadImage("texture.jpg");
-  newFont = loadFont("If.ttf")
+  paperTexture = loadImage("./assets/texture.jpg");
+  newFont = loadFont("./assets/if.ttf")
 
-  locTable = loadTable('locations.csv', 'csv', 'header'); // location types
-  desTable = loadTable('descriptors.csv', 'csv'); // descriptor types
-  featTable = loadTable('features.csv', 'csv'); // feature types
+  locTable = loadTable('./assets/locations.csv', 'csv', 'header'); // location types
+  desTable = loadTable('./assets/descriptors.csv', 'csv'); // descriptor types
+  featTable = loadTable('./assets/features.csv', 'csv'); // feature types
 }
 
 function setup() {
