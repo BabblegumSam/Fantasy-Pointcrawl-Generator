@@ -26,7 +26,7 @@ let valleyArr, plainsArr, hillArr, mountArr, cityArr, strangeArr, desArr, featAr
 
 function preload() {
   paperTexture = loadImage("./assets/texture.jpg");
-  newFont = loadFont("./assets/if.ttf")
+  newFont = loadFont("./assets/if.ttf");
 
   locTable = loadTable('./assets/locations.csv', 'csv', 'header'); // location types
   desTable = loadTable('./assets/descriptors.csv', 'csv'); // descriptor types
@@ -105,9 +105,6 @@ function arrayInitialize() {
   // to use the getArray() function to sort them into an array
   desArr = desTable.getArray();
   featArr = featTable.getArray();
-}
-
-function voronoiSettings(w, h) {
 }
 
 function voronoiDisplay(r, g, b) {
