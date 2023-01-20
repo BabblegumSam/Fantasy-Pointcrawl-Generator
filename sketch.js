@@ -247,7 +247,6 @@ class Site {
 
       // this data sample is then processed to determine the biome of a point Site's surrounding area
       this.biomeData = areaAverage/4;
-      print(this.id + ": " + this.biomeData);
 
       this.processData(); 
     }
@@ -366,9 +365,6 @@ class Block {
   }
 
   palette() {
-    let xSize = this.w/5;
-    let ySize = this.h/5;
-
     switch(this.picker) {
      
       case 0: // neither CITY nor STRANGE biome, default to assigned point Site biome 
@@ -516,7 +512,6 @@ function information() {
     let x = 0;
     let y = (height - yBorder * 2)/7 * modulo;
     if (i >= round(sites.length/2) ) { x = width/4;
-                                  // y -= height; 
                                 }    
    infoBox(x, y, sites[i].id);
    print(sites[i].id)
